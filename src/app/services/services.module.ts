@@ -8,7 +8,7 @@ export const API_CONFIG = new InjectionToken('ApiConfigToken');
   imports: [
   ],
   providers: [
-    { provide: API_CONFIG, useValue: 'http://localhost:3000/' }
+    { provide: API_CONFIG, useValue: 'http://yanyi24.cn:4000/' }
   ]
 })
 export class ServicesModule { }

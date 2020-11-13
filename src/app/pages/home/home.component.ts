@@ -7,6 +7,7 @@ import {
   Singer,
   SongSheet
 } from 'src/app/services/data-types/common.types';
+import { SheetService } from 'src/app/services/sheet.service';
 
 @Component({
   selector: 'app-home',
@@ -21,6 +22,7 @@ export class HomeComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private sheetService: SheetService,
   ) {
     this.route.data.pipe(map((data) => data.homeDatas)).subscribe(([banners, hotTags, songSheetList, singers]) => {
       this.banners = banners;
@@ -31,5 +33,11 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+  onPlaySheet(id: number): void{
+    this.sheetService.playSheet(id).subscribe(res => {
+      console.log(res);
+      
+    });
   }
 }

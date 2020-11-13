@@ -9,7 +9,6 @@ import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
 import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 import { WyUiModule } from './wy-ui/wy-ui.module';
-import { PlayCountPipe } from './play-count.pipe';
 
 
 
