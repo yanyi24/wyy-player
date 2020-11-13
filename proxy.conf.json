@@ -1,0 +1,7 @@
+{
+  "/api": {
+      "target": "http://yanyi24.cn:3000/", 
+      "secure": false,
+      "pathRewrite": {"^/api": ""}
+  }
+}
